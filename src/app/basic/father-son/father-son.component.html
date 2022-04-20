@@ -3,8 +3,20 @@
 
 <br><br>
 
-<button class="btn btn-primary" *ngIf="client" (click)="onChange(5)">
+<button 
+    class="btn btn-primary"
+    *ngIf="client"
+    (click)="onChange(5)"
+    data-test="btn-id"
+    >
     Cambiar ID
 </button>
 
-<button *ngIf="client" class="btn btn-outline-danger" (click)="onDelete()">Borrar Cliente</button>
+<button
+    *ngIf="client"
+    class="btn btn-outline-danger"
+    (click)="onDelete()"
+    data-test="btn-delete"
+    >
+    Borrar Cliente
+</button>
